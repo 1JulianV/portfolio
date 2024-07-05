@@ -1,0 +1,23 @@
+body{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.938);
+}
+.bar{
+    color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: end;
+    padding-right: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter:blur(7px); 
+}
+.bar li{
+    display: inline-block;
+    margin-right: 10px;
+}
+main{
+    margin-top: 50px;
+}
