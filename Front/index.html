@@ -17,46 +17,51 @@
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <!-- styles -->
      <link rel="stylesheet" href="./styles.css">
+     <!-- Fonts google -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <!-- bar of tasks -->
-        <div class="bar">
+        <div class="bar josefin-sans">
             <ul>
             <li>
-            <a href="" class="bar-task">Home</a>
+            <a href="#home" class="bar-task text-success">Home</a>
             </li>
             <li>
-            <a href="" class="bar-task">About me</a>
+            <a href="#about-me" class="bar-task text-success">About me</a>
             </li>
-            <!-- ! In progress <a href="">Experience</a> -->
             <li>
-            <a href="" class="bar-task">Proyects</a>
+            <a href="#proyects" class="bar-task text-success">Proyects</a>
         </li>
             <li>
-            <a href="" class="bar-task">Contact</a>
+            <a href="#contact" class="bar-task text-success">Contact</a>
         </li>
         </ul>
         </div>
     </header>
-    <main>
+    <main class="d-flex justify-content-center">
         <div id="home">
-            <b>Web Developer</b>          
-            <b>Julián Villegas</b>
-            <a href="" class="" download>
+            <h2 class="text-warning"><b>Web Developer</b></h2>       
+            <h2><b>Julián Villegas</b></h2>
+            <a href="" class="home-download d-flex justify-content-center" download>
                 Download CV
               </a>
         </div>
         <div id="about-me">
-            <h2>About me</h2>
+            <h2 class="d-flex justify-content-center">About me</h2>
+            <div class="about-me-div">
             <p>I was born in Río Negro, Argentina | 21 years old</p> 
-            <p>Passionate about design with a profound interest in technology and its functions.</p> 
+            <p>Passionate about developing with a profound interest in technology and its functions.</p> 
             <p>Seeking to learn and grow my professional skills in this dynamic field.</p>
+            </div>
         </div>
         <div id="proyects">
-            <div>
-            <h2>Proyects</h2>
-            <h3>CineNexo</h3>
+            <h2 class="d-flex justify-content-center">Proyects</h2>
+            <div class="proyects-div">
+            <h3 class="d-flex justify-content-center">CineNexo</h3>
             <p>Page design for exploring and adding a collection of movies.</p>
             <a href="https://cinenexo-21ac1.web.app/index.html" target="_blank">
                 <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/140673778/344445750-ef1cf752-d19b-4df9-ada9-038ef50e2696.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240705%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240705T045316Z&X-Amz-Expires=300&X-Amz-Signature=0235d81db174f22ba5fab0808ff160fbac8d7606641f042ac6b38fd8116c38bf&X-Amz-SignedHeaders=host&actor_id=140673778&key_id=0&repo_id=750093041" alt="CineNexo">
@@ -65,7 +70,8 @@
         </div>
     </main>
     <footer>
-        <div id="contact">
+    <div id="contact" class="d-flex justify-content-around">
+        <div>
           <ul>
             <li>
               <b>Contact</b>
@@ -98,5 +104,6 @@
                     </li>
                 </ul>
             </div>
+        </div>
 </body>
 </html>

@@ -3,7 +3,6 @@ body{
     background-color: rgba(0, 0, 0, 0.938);
 }
 .bar{
-    color: white;
     width: 100%;
     position: fixed;
     top: 0;
@@ -11,13 +10,51 @@ body{
     display: flex;
     justify-content: end;
     padding-right: 20px;
-    background: rgba(255, 255, 255, 0.3);
-    backdrop-filter:blur(7px); 
+    background: rgb(99 96 96 / 30%);
+    backdrop-filter:blur(7px);
 }
 .bar li{
     display: inline-block;
     margin-right: 10px;
+    padding-top: 7px; 
+}
+a{
+    text-decoration: none;
+    color: white; 
+}
+.home-download{
+    background: blue;
+    border-radius: 20px;
+}
+.bar a:hover{
+    opacity: 0.5;
 }
 main{
-    margin-top: 50px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#home{
+    margin-bottom: 50px ;
+}
+.about-me-div, .proyects-div {
+    padding: 10px;
+    border: 2px solid rgb(71, 68, 68);
+    border-radius: 20px;
+    margin: 20px;
+}
+.josefin-sans{
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 619;
+    font-style: normal;
+  }
+footer{
+    padding-top: 20px;
+    background: #2d0872;
+}
+footer b{
+    text-decoration: underline;
 }
