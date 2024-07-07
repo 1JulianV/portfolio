@@ -21,26 +21,22 @@
       <!-- ! 1 -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-     <!-- ! 2-->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <header>
         <!-- bar of tasks -->
-        <div class="bar dm-serif-display-regular">
+        <div id="home" class="bar sora">
             <ul>
+                <li>
+                    <a href="#home" class="bar-task text-light"><i class="fa-solid fa-house"></i> Home</a>
+                </li>
             <li>
-            <a href="#about-me" class="bar-task text-light">About me</a>
+            <a href="#about-me" class="bar-task text-light"><i class="fa-solid fa-user"></i> About me</a>
             </li>
             <li>
-            <a href="#proyects" class="bar-task text-light">Proyects</a>
-        </li>
-            <li>
-            <a href="#contact" class="bar-task text-light">Contact</a>
+            <a href="#proyects" class="bar-task text-light"><i class="fa-solid fa-folder"></i> Proyects</a>
         </li>
         </ul>
         </div>
@@ -58,19 +54,21 @@
               <a href="https://www.linkedin.com/in/julian-villegas-fullstack/" class="home-button" target="_blank">
                 <i class="fa-brands fa-linkedin"></i> Linkedin
             </a>
+            <a href="https://github.com/1JulianV" class="home-button" target="_blank">
+                <i class="fa-brands fa-github"></i> Github
+            </a>
         </div> 
         </div>
         <div id="about-me">
             <h2 class="about-me-title"><i class="fa-regular fa-user"></i> About me</h2>
             <div class="about-me-div">
-            <p>Passionate about technology and its various functions, I am committed to enhancing my 
-                professional skills in this dynamic and ever-evolving field. With a background as a 
-                web developer, I have gained valuable experience in creating projects using 
-                <b class="text-danger">CSS</b> and <b class="text-warning">JavaScript</b>. My strong interest in learning more about 
-                frameworks and libraries dedicated 
-                to visual design drives my continuous pursuit of knowledge. I am seeking opportunities that
-                will allow me to apply my expertise, contribute meaningfully to projects, and advance my 
-                career in frontend development.</p>
+            <p>Passionate about technology and its various functions, I am committed to enhancing my professional skills in this dynamic 
+                and ever-evolving field.</p>
+                <p>With a background as a web developer, I have gained valuable experience in creating projects using 
+                    <b class="text-danger">CSS</b> and <b class="text-warning">JavaScript</b>. My strong interest in learning more 
+                    about frameworks and libraries dedicated to visual design drives my continuous pursuit of knowledge.</p>
+                    <p>I am seeking opportunities that will allow me to apply my expertise, contribute meaningfully to projects, and
+                    advance my career in frontend development.</p>
             </div>
         </div>
         <div id="proyects">
@@ -81,7 +79,7 @@
                  class="proyects-div-link-img" alt="CineNexo">
             </a>
             <div class="proyects-div-text">
-            <h3>CineNexo</h3>
+            <h3 class="proyects-div-text-title">CineNexo</h3>
             <b class="proyects-div-text-icons"><i class="fa-brands fa-bootstrap"></i> Bootstrap</b>
             <b class="proyects-div-text-icons"><i class="fa-solid fa-database"></i> Mongodb</b>
             <b class="proyects-div-text-icons"><i class="fa-brands fa-node-js"></i></i> Node</b>
@@ -93,39 +91,6 @@
         </div>
     </main>
     <footer>
-    <div id="contact" class="d-flex justify-content-around">
-        <div>
-          <ul>
-            <li>
-              <b>Contact</b>
-            </li>
-            <li>
-              <i class="fa-solid fa-phone"></i>
-              <span>+54 9 2920 26-6443</span>
-            </li>
-            <li>
-              <i class="fa-solid fa-envelope"></i>
-              <span>julivilleaugusto@gmail.com</span>
-            </li>
-          </ul>
-        </div>
-        <div>
-                <ul>
-                    <li>
-                    <b>Social</b>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/julian-villegas-fullstack/" target="_blank">
-                            <i class="fa-brands fa-linkedin"></i> Linkedin
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/1JulianV" target="_blank">
-                            <i class="fa-brands fa-github"></i> Github
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            </div>
+    </footer>
 </body>
 </html>
