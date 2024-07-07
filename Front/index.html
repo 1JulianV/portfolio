@@ -18,14 +18,20 @@
     <!-- styles -->
      <link rel="stylesheet" href="./styles.css">
      <!-- Fonts google -->
+      <!-- ! 1 -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     <!-- ! 2-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
         <!-- bar of tasks -->
-        <div class="bar josefin-sans">
+        <div class="bar dm-serif-display-regular">
             <ul>
             <li>
             <a href="#home" class="bar-task text-light">Home</a>
@@ -42,11 +48,12 @@
         </ul>
         </div>
     </header>
-    <main>
-        <div id="home">
-            <h2 class="display-5"><b>hi, i'm Julián</b></h2>
+    <main class="sora">
+        <div id="home" class="">
+            <h2 class="display-5"><b>Hi, i'm Julián</b></h2>
             <p class="display-6">+1 year of experience as a <b class="text-warning">Web Developer</b><p>
-                <p class="display-6">from Argentina, Río Negro.</p> 
+                <p class="display-6">from Argentina, Río Negro.</p>
+                <div class="home-div-buttons">
             <a href="" class="home-button" download>
                 <i class="fa-regular fa-file"></i>
                 <b>Download CV</b>
@@ -54,22 +61,31 @@
               <a href="https://www.linkedin.com/in/julian-villegas-fullstack/" class="home-button" target="_blank">
                 <i class="fa-brands fa-linkedin"></i> Linkedin
             </a>
+        </div> 
         </div>
         <div id="about-me">
-            <h2>About me</h2>
+            <h2><i class="fa-regular fa-user"></i> About me</h2>
             <div class="about-me-div">
-            <p class="josefin-sans">Passionate about developing with a profound interest in technology and its functions.</p> 
-            <p>Seeking to learn and grow my professional skills in this dynamic field.</p>
+            <p>Passionate about developing with a profound interest in technology and its functions. 
+             Seeking to learn and grow my professional skills in this dynamic field.</p>
             </div>
         </div>
         <div id="proyects">
-            <h2>Proyects</h2>
+            <h2><i class="fa-regular fa-folder-open"></i> Proyects</h2>
             <div class="proyects-div">
-            <h3>CineNexo</h3>
-            <p>Page design for exploring and adding a collection of movies.</p>
-            <a href="https://cinenexo-21ac1.web.app/index.html" target="_blank">
-                <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/140673778/344445750-ef1cf752-d19b-4df9-ada9-038ef50e2696.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240705%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240705T045316Z&X-Amz-Expires=300&X-Amz-Signature=0235d81db174f22ba5fab0808ff160fbac8d7606641f042ac6b38fd8116c38bf&X-Amz-SignedHeaders=host&actor_id=140673778&key_id=0&repo_id=750093041" alt="CineNexo">
+            <a href="https://cinenexo-21ac1.web.app/index.html" class="proyects-div-link" target="_blank">
+                <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/140673778/344445750-ef1cf752-d19b-4df9-ada9-038ef50e2696.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240707%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240707T055914Z&X-Amz-Expires=300&X-Amz-Signature=fbeddd98656738ebdb802e3dae23f616827b1af8d03675b8dcd7886f6f206171&X-Amz-SignedHeaders=host&actor_id=140673778&key_id=0&repo_id=750093041" 
+                 class="proyects-div-link-img" alt="CineNexo">
             </a>
+            <div class="proyects-div-text">
+            <h3>CineNexo</h3>
+            <b class="proyects-div-text-icons"><i class="fa-brands fa-bootstrap"></i> Bootstrap</b>
+            <b class="proyects-div-text-icons"><i class="fa-solid fa-database"></i> Mongodb</b>
+            <b class="proyects-div-text-icons"><i class="fa-brands fa-node-js"></i></i> Node</b>
+            <p class="proyects-div-text-p">A page designed to explore and add a collection of movies. It allows users to add new movies to the database and then view them in an organized manner on the website.</p>
+            <a href="https://github.com/1JulianV/CineNexo" class="proyects-div-text-pages" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+            <a href="https://cinenexo-21ac1.web.app/index.html" class="proyects-div-text-pages" target="_blank"><i class="fa-solid fa-link"></i> Preview</a>
+        </div>
             </div>
         </div>
     </main>
@@ -93,7 +109,7 @@
         <div>
                 <ul>
                     <li>
-                        <b>Social</b>
+                    <b>Social</b>
                     </li>
                     <li>
                         <a href="https://www.linkedin.com/in/julian-villegas-fullstack/" target="_blank">
