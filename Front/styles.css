@@ -26,22 +26,30 @@ a{
     padding: 10px;
     color: white; 
 }
+.text-warning {
+    --bs-text-opacity: 1;
+    color: rgb(223 194 108) !important;
+}
+.text-primary {
+    --bs-text-opacity: 1;
+    color: rgb(83 152 255) !important;
+}
 .bar a{
     font-size: 20px;
 }
-.home-button{
-    background: #374171;
+.home-button {
+    background: #23252f;
     font-size: 20px;
     width: 120px;
     border-radius: 20px;
-    border: 2px solid #778df0;
+    border: 2px solid #383e5c;
     margin-right: 20px;
 }
 a:hover{
     opacity: 0.5;
 }
 main{
-    margin-top: 200px;
+    padding-top: 150px;
     flex-direction: column;
     margin-left: 20px;
     padding-left: 20rem;
@@ -57,8 +65,6 @@ div{
     font-weight: 400;
     font-style: normal;
   }
-
-
 .sora{
   font-family: "Sora", sans-serif;
   font-optical-sizing: auto;
@@ -68,9 +74,17 @@ div{
     margin-top: 50px;
     margin-bottom: 200px;
 }
+#about-me{
+    width: 800px;
+
+}
+.about-me-title, .proyects-title{
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
 footer{
     padding-top: 20px;
-    background: #0c0e18;
+    background: #14182d;
     border-top: 2px solid #ffff;
 }
 footer b{
@@ -84,7 +98,7 @@ footer b{
 }
 .proyects-div-link:hover{
     opacity: 1;
-    scale: 1.2;
+    scale: 1.1;
     transition: 300ms;
 }
 .proyects-div-link-img{
