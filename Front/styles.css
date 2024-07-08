@@ -79,10 +79,6 @@ div{
     padding-bottom: 50px;
     padding-top: 200px;
 }
-footer{
-    padding-top: 20px;
-    background: #14182d;
-}
 .proyects-div{
     display: flex;
 }
@@ -114,6 +110,7 @@ footer{
     margin-bottom: 26px;
 }
 .proyects-div-text-icons{
+    display: inline-block   ;
     background: #0c0e18;
     padding: 5px;
     border-radius: 26px;
@@ -130,4 +127,68 @@ footer{
 .proyects-div-text-pages:hover{
     opacity: 1;
     border: none;
+}
+@media screen and (max-width:970px){
+    .bar{
+        margin-left: 2px;
+    }
+    main{
+        padding-top: 150px;
+        padding-left: 2px;
+    }
+    .home-div-buttons{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .about-me-title, .proyects-title{
+        padding-bottom: 10px;
+        padding-top: 50px;
+    }
+    .proyects-div-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .proyects-div-link-img{
+        width: 200px;
+        height: 100px;
+    }
+    #home, #about-me, #proyects{
+        width: 600px;
+    } 
+}
+@media screen and (max-width:600px){
+    p{
+        font-size: 10px;
+    }
+    .bar{
+        margin-left: 2px;
+    }
+    .bar a{
+        width: auto;
+        font-size: 10px;
+    }
+    #home, #about-me, #proyects{
+        width: 300px;
+    }
+    .home-button{
+        width:max-content;
+        font-size: 8px;
+        margin-bottom: 5px;
+    }
+    .proyects-div-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .proyects-div-link-img{
+        width: 100px;
+        height: 50px;
+    }
+    .proyects-div-text{
+        font-size: 6px;
+    }
+    .proyects-div-text-pages{
+        font-size: 10px;
+    }  
 }
